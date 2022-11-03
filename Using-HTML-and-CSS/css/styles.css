@@ -1,0 +1,195 @@
+* {
+    margin: 0;
+    padding: 0;
+    font: inherit;
+    
+}
+
+img,
+picture {
+    max-width: 100%;
+    display: block;
+}
+
+header {
+    position:absolute;
+    margin: 0;
+    top: 0;
+    left: 0;
+    background-color: black;
+    width: 100%;
+    height: 4rem;
+}
+
+.logo {
+    position: relative;
+    float:left;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    font-stretch: expanded;
+    font-family: 'Montserrat', sans-serif;
+    text-decoration-line: underline;
+    padding-left: 4rem;
+    padding-top: 20px;
+}
+
+nav {
+    display: inline;
+    float: right;
+    text-decoration: none;
+    color: white;
+    padding: 20px 10px 8px;
+    
+
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 100;
+    letter-spacing: 1px;
+    word-spacing: 18px;
+    padding: 15px 12px;
+    font-size: 14px;
+    
+}
+
+a:hover {
+    color: #db8d33;
+}
+
+a:active {
+    text-decoration: underline;
+}
+ 
+#active {
+    text-decoration: underline;
+}
+
+.container {
+    background-color: white;
+    margin: auto;
+    width: 95%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+h2 {
+    font-family: 'Marck Script', cursive;
+    font-size: 50px;
+    color: #db8d33;
+}
+
+h3 {
+    font-size: 50px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    line-height: 30px;
+    
+}
+
+p {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 22px;
+}
+article {
+    position: relative;
+    float: left;
+    width: 50%;
+    padding: 10px;
+    height: 20rem;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 10em;
+    border: 10px;
+    text-align: center;
+}
+
+.star {
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+    flex-wrap: nowrap;
+    margin: 8px 5px;
+    padding-top: 2px;
+}
+
+.pic {
+    
+    margin-top: 11em;
+    width: none;
+}
+
+.restaurant {
+    position: relative;
+    max-width: 500px;
+    width: 75vw;
+    height: auto;
+    flex-wrap: nowrap;
+    margin-right: 1em;
+    margin-left: 4em;
+}
+
+#about{
+    color: #db8d33;
+    font-size: 14px;
+    letter-spacing: 0;
+    word-spacing: 0;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    text-decoration: underline;
+    line-height: 4em;
+}
+   
+@media (max-width: 950px) {
+    .container {
+        display:flex;
+        flex-direction: column;
+        width: 100%;
+        justify-content: center;
+        margin:0;
+        align-items: baseline;
+        justify-content: center;
+    }
+
+    article {
+        position: relative;
+    float: none;
+    width: 50%;
+    padding: 0;
+    height: 20rem;
+    margin: 4rem;
+    margin-right: 0rem;
+    margin-top: 10em;
+    margin-bottom: 0rem;
+    border: 0px;
+    text-align: center;
+        align-self:center;
+        text-overflow:inherit;
+
+    }
+
+    h2 {
+        font-size: 40px;
+    }
+
+    h3 {
+        font-size: 40px;
+    }
+
+    .restaurant {
+        margin:12rem;
+        margin-top: 0;
+        float:unset;
+        align-self: center;
+        overflow:clip;
+    }
+}
+
+/* I'm gonna need a refresher on flexbox and responsiveness
