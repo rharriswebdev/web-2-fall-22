@@ -1,1 +1,142 @@
-@import 
+@import "./vendor/normalize";
+@import "./partials/colors";
+@import "./partials/typography";
+@import "./partials/mixins";
+
+* {
+ 
+}
+
+.navigation {
+    background-color: black;
+    height: 4em;
+    display: flex;
+
+    .logo {
+        color: white;
+        height: 1em;
+        width: 50%;
+        margin: 2em;
+        margin-top: 1.25em;
+        padding-left: 16px;
+        font-family: $title;
+        text-transform: uppercase;
+        font-weight: 800;
+        text-decoration: underline;
+        font-size: 18px;
+    }
+
+    nav {
+        width: 50%;
+        display: flex;
+        flex-direction: row;
+        padding: 10px;
+    
+
+        a {
+            font-family: $title;
+            font-size: 14px;
+            flex-direction: row;
+            width: 50%;
+            align-self: center;
+            text-align: center;
+            text-decoration: none;
+            color: white;
+            font-weight: 100;
+            
+        }
+
+        #active {
+            text-decoration: underline;
+        }
+
+        a:hover {
+            color: $seccondary-font-color;
+        }
+    }
+    
+}
+
+.container {
+    display: flex;
+    margin-top: 6em;
+    justify-content: space-around;
+
+    article {
+        width: 40%;
+        align-self: center;
+        text-align: center;
+        padding-bottom: 20px;
+
+        h2 {
+            @include heading;
+            margin-bottom: 0px;
+            margin-top: 10px;
+            height: 42px;
+        }
+
+        h3 {
+            font-family: 'Montserrat', sans-serif;
+            text-transform: uppercase;
+            font-size: 45px;
+            font-weight: bolder;
+            margin: 0px;
+        }
+
+        .star {
+            margin-bottom: 0;
+        }
+
+        p {
+            font-size: 22px;
+            font-family: $primary-font;
+            margin-top: 5px;
+            margin-bottom: 5px;
+        }
+
+        #about {
+            font-family: $title;
+            color: $seccondary-font-color;
+            font-size: 13px;
+            font-weight: 700;
+            margin:auto;
+        }
+
+    }
+
+    .pic {
+        width: auto;
+        align-self: center;
+    }
+
+    img {
+        width: auto;
+        object-fit: contain;
+    }
+
+
+}
+
+@media (max-width: 675px) {
+   
+    .logo {
+        width: 5px;
+    }
+
+    nav {
+        width: 75%;
+    }
+   
+    .container {
+        flex-direction: column;
+
+        article {
+            width: 80%;
+            margin-bottom: 4em;
+        }
+
+        .pic {
+            width: auto;
+        }
+    }
+}
