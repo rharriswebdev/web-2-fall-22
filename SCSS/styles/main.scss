@@ -3,9 +3,6 @@
 @import "./partials/typography";
 @import "./partials/mixins";
 
-* {
- 
-}
 
 .navigation {
     background-color: black;
@@ -91,7 +88,7 @@
             font-size: 22px;
             font-family: $primary-font;
             margin-top: 5px;
-            margin-bottom: 5px;
+            margin-bottom: 15px;
         }
 
         #about {
